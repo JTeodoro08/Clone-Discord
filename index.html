@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="brand">
+                <img src="discord.png" alt="Discord Logo" class="logo" />
+                <span class="logo-text">Discord</span>
+            </div>
+
+            <nav class="nav" id="nav-links">
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Nitro</a></li>
+                    <li><a href="#">Descobrir</a></li>
+                    <li><a href="#">Segurança</a></li>
+                    <li><a href="#">Missões</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Desenvolvedores</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="login-btn">Entrar</a>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span>Bate-papo</span>
+                        <span>em grupo</span>
+                        <span>repleto de</span>
+                        <span>diversão e</span>
+                        <span>jogos</span>
+                    </h1>
+                    <p class="hero-description">
+                        O Discord é ótimo para jogar e relaxar com os amigos, ou até mesmo para criar uma comunidade
+                        mundial.
+                        Personalize seu espaço para conversar, jogar e curtir.
+                    </p>
+
+                </div>
+                <div class="hero-image">
+                    <img src="assets/discord-go-rsel33.jpg" alt="Ilustração Hero" />
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-white">↓ Baixar para Windows</a>
+                <a href="#" class="btn btn-dark">Abrir Discord no navegador</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="chat-feature-box">
+        <div class="chat-box-container">
+
+            <!-- Box com fundo rosa e imagem dentro - À esquerda -->
+            <div class="chat-box-card">
+                <img src="foto-discord.png" alt="Simulação Discord" />
+            </div>
+
+            <!-- Texto à direita -->
+            <div class="chat-box-text">
+                <h2>Deixe os bate-papos em grupo mais divertidos</h2>
+                <p>
+                    Use emojis, figurinhas, efeitos sonoros do Soundboard e muito mais para colocar sua
+                    personalidade no bate-papo em voz, vídeo ou texto. Ajuste o avatar, um status personalizado e
+                    escreva o próprio perfil para que ele apareça no bate-papo do seu jeito.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VIDEO-FEATURE SECTION -->
+    <!-- VIDEO-FEATURE SECTION -->
+    <section class="video-feature-box">
+        <div class="video-box-container">
+
+            <!-- Box de vídeos -->
+            <div class="video-box-card">
+
+                <!-- Vídeo principal -->
+                <div class="main-video">
+                    <iframe src="https://www.youtube.com/embed/Fgoc1QNUm5E" title="Demonstração principal de vídeo"
+                        frameborder="0" allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <!-- Linha com miniaturas de vídeos -->
+                <div class="mini-video-row">
+                    <div class="mini-video">
+                        <iframe src="https://www.youtube.com/embed/Dcv71FA46I4" title="Vídeo Rose" frameborder="0"
+                            allowfullscreen loading="lazy"></iframe>
+                        <span>Game</span>
+                    </div>
+
+                    <div class="mini-video">
+                        <iframe src="https://www.youtube.com/embed/Of69TxuIHBU" title="Vídeo z_lot" frameborder="0"
+                            allowfullscreen loading="lazy"></iframe>
+                        <span>X-Games</span>
+                    </div>
+
+                    <div class="mini-video">
+                        <iframe src="https://www.youtube.com/embed/dHj6Evlbk5M" title="Vídeo Olive" frameborder="0"
+                            allowfullscreen loading="lazy"></iframe>
+                        <span>Filmes</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Texto explicativo -->
+            <div class="video-box-text">
+                <h2>Sempre tem coisa pra gente fazer junto</h2>
+                <p>
+                    Vejam vídeos, joguem games integrados, ouçam músicas ou apenas naveguem juntos e compartilhem memes.
+                    Enviem mensagens de texto, liguem, conversem por vídeo e joguem tranquilamente, tudo em um só
+                    bate-papo em grupo.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seções futuras -->
+    <section class="features">
+        <!-- Conteúdo será adicionado aqui -->
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Discord Clone. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para ativar o menu mobile -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-links');
+
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active'); // animação no botão
+            nav.classList.toggle('active');    // mostra/esconde menu
+        });
+    </script>
+
+</body>
+
+</html>
